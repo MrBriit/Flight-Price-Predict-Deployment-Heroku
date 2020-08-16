@@ -26,23 +26,23 @@ def predict():
         date_dep = request.form["Dep_Time"]
         Journey_day = int(pd.to_datetime(date_dep, format="%Y-%m-%dT%H:%M").day)
         Journey_month = int(pd.to_datetime(date_dep, format ="%Y-%m-%dT%H:%M").month)
-        # print("Journey Date : ",Journey_day, Journey_month)
+     
 
-        # Departure
+        # Departure Time
         Dep_hour = int(pd.to_datetime(date_dep, format ="%Y-%m-%dT%H:%M").hour)
         Dep_min = int(pd.to_datetime(date_dep, format ="%Y-%m-%dT%H:%M").minute)
-        # print("Departure : ",Dep_hour, Dep_min)
+       
 
         # Arrival Time
         date_arr = request.form["Arrival_Time"]
         Arrival_hour = int(pd.to_datetime(date_arr, format ="%Y-%m-%dT%H:%M").hour)
         Arrival_min = int(pd.to_datetime(date_arr, format ="%Y-%m-%dT%H:%M").minute)
-        # print("Arrival : ", Arrival_hour, Arrival_min)
+     
 
         # Duration
         dur_hour = abs(Arrival_hour - Dep_hour)
         dur_min = abs(Arrival_min - Dep_min)
-        # print("Duration : ", dur_hour, dur_min)
+       
 
         # Total Stops
         Total_stops = int(request.form["stops"])
