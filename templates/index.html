@@ -1,50 +1,4 @@
 
-<!--<html lang="en">-->
-
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Flight Price Prediction</title>-->
-
-
-<!--    &lt;!&ndash; BootStrap &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"-->
-<!--        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
-
-
-<!--    &lt;!&ndash; css &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="static/css/style.css">-->
-
-
-<!--</head>-->
-
-<!--<body>-->
-<!--<img src=-->
-<!--https://totaldatascience.com/wp-content/uploads/2019/10/TOTAL-1.png"-->
-<!--         alt="TDS Logo", width="200", height="70", style="float:left">-->
-
-
-<!--<style>-->
-<!--body {-->
-<!--  background-image: url("https://images.unsplash.com/photo-1571954149576-4ccccd6b1ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");-->
-<!--  background-position: 200%;-->
-<!--  background-size: cover;-->
-<!--}-->
-<!--</style>-->
-<!--    &lt;!&ndash; As a heading &ndash;&gt;-->
-<!--&lt;!&ndash;    <nav class="navbar navbar-inverse navbar-fixed-top">&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="container-fluid">&ndash;&gt;-->
-<!--&lt;!&ndash;            &ndash;&gt;-->
-
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;    </nav>&ndash;&gt;-->
-
-<!--    <br><br><br>-->
-
-<!--	<h1>Predict Flight Price</h1>-->
-
-
 <html lang="en">
 
 <head>
@@ -105,34 +59,6 @@ body {
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Departure</h5>
-                            <!-- Departure -->
-                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Arrival</h5>
-                            <!-- Arrival -->
-                            <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
                             <!-- Source -->
                             <h5 class="card-title">Source</h5>
                             <select name="Source" id="Source" required="required">
@@ -160,28 +86,68 @@ body {
                 </div>
             </div>
 
-
-
             <br>
             <br>
             <br>
-
-            <div class="row">
+             <div class="row">
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Stopage</h5>
-                            <!-- Total Stops -->
-                            <select name="stops" required="required">
-                                <option value="0">Non-Stop</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
+                            <h5 class="card-title">Departure</h5>
+                            <!-- Departure -->
+                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
                         </div>
                     </div>
                 </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Arrival</h5>
+                            <!-- Arrival -->
+                            <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6">-->
+<!--                    <div class="card">-->
+<!--                        <div class="card-body">-->
+<!--                            &lt;!&ndash; Source &ndash;&gt;-->
+<!--                            <h5 class="card-title">Source</h5>-->
+<!--                            <select name="Source" id="Source" required="required">-->
+<!--                                <option value="Mumbai">Mumbai</option>-->
+<!--                                <option value="Kolkata">Kolkata</option>-->
+<!--                                <option value="Delhi">Delhi</option>-->
+<!--                                <option value="Chennai">Chennai</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6">-->
+<!--                    <div class="card">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Destination</h5>-->
+<!--                            &lt;!&ndash; Destination &ndash;&gt;-->
+<!--                            <select name="Destination" id="Destination" required="required">-->
+<!--                                <option value="Delhi">Delhi</option>-->
+<!--                                <option value="Cochin">Cochin</option>-->
+<!--                                <option value="Hyderabad">Hyderabad</option>-->
+<!--                                <option value="Kolkata">Kolkata</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div class="row">
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -205,22 +171,34 @@ body {
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stopage</h5>
+                            <!-- Total Stops -->
+                            <select name="stops" required="required">
+                                <option value="0">Non-Stop</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
             <br>
             <br>
             <br>
+
+
             <!-- Submit -->
             <input type="submit" value="Submit" class="btn btn-secondary">
         </form>
 
-        <br>
-        <br>
+
         <h3>{{ prediction_text }}</h3>
 
-        <br>
         <br>
         <p>©2020 Total Data Science</p>
 
