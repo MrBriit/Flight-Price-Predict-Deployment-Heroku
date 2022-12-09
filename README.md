@@ -2,7 +2,7 @@
 
 In this data science machine learning project tutorial, we are going to build an end to end machine learning project and then deploy it via Heroku.
 
-NB:Heroku is upgrading the platform and you may not be able to see this project at the moment. If you are not able to see it right away, kindly come back to check for update.
+**NB:** Heroku is upgrading the platform and you may not be able to see this project at the moment. If you are not able to see it right away, kindly come back to check for update.
 
 Test App here: https://tdsapp.herokuapp.com/
 
